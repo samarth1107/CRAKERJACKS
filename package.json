@@ -1,0 +1,15 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "laptop to mobile calling",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Prasham",
+  "license": "MIT"
+}

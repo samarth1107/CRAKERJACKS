@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calling</title>
+    <script>
+        /*(var fileContents;
+        var fs = require('fs');
+        fs.readFile("test.txt", 'utf8', function (err, data) {
+        if (err) return console.log(err);
+        // data is the contents of the text file we just read
+        fileContents = data
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            var doc = document.getElementsByTagName("button")[0]
+            alert(fileContents)
+            doc.addEventListener("click", function() {
+                document.getElementById("fileContents").textContent = "Welcome"
+            })
+        });
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            var doc = document.getElementsByTagName("button")[0]
+            doc.addEventListener("click", function() {
+                    function loadfile() {
+                        loadStrings("test.txt", fileloaded);
+                    }
+                    function fileloaded(data) {
+                        txt = data;
+                        createP(join(data, "<br/>"));
+                    }
+                    function setup(){
+                        noCanvas();
+                        var button = select("#loadfile");
+                        button.mousePressed(loadfile);
+                    }
+                document.getElemetByld("openfile").addEventListener('change',function(){
+                    var fr = new FileReader();
+                    fr.onload = function(){
+                    alert(document.getElementById("fileContents").textContent) //= this.result;
+                }
+                fr.readAsText(this.files[0]);
+            })
+        })*/
+        /*document.getElementById('openfile')
+        .addEventListener('change', getFile)
+        
+        function getFile(event) {
+            const input = event.target
+        if ('files' in input && input.files.length > 0) {
+            placeFileContent(
+            document.getElementById("a"),
+            input.files[0])
+        }
+        
+        }
+
+        function placeFileContent(target, file) {
+            readFileContent(file).then(content => {
+            target.value = content
+        }).catch(error => console.log(error))
+        }
+        function readFileContent(file) {
+            const reader = new FileReader()
+        return new Promise((resolve, reject) => {
+            reader.onload = event => resolve(event.target.result)
+            reader.onerror = error => reject(error)
+            reader.readAsText(file)
+        })
+        }*/
+
+    </script>
+    </head>
+    <body style="background-color: rgb(212, 202, 49)">
+    <h1 style="background-color:rgb(225, 82, 0);" align="center">Make Call From Laptop</h1>
+    <br />
+    <h2 align="center"><font color = "red"><button id="loadfile" onclick="hello">Enter speech</button></font></h2>
+    <input type="file" id="openfile" />
+    <br>
+</body>
+</html>
